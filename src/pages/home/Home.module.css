@@ -1,0 +1,137 @@
+
+section  {
+    background-color: var(--background);
+    /* border: 2px solid red; */
+    position: relative;
+    height: auto;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+
+.main-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 30px; */
+    padding: 40px;
+    height: 80vh;
+}
+
+
+
+.sub-container {
+    /* border: 2px solid green; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.3rem;
+    padding: 15px;
+  animation: slide-up 0.5s ease;
+
+}
+
+
+
+.sub-container h1 {
+    font-weight: 900;
+    font-size: 36px;
+    color: var(--foreground);
+}
+
+.title-1 {
+    font-size: 16px;
+    color: grey;
+}
+
+.title-1 span {
+  color: #2675c4;
+  font-weight: 700;
+}
+
+.title {
+    font-size: 24px;
+    color: #2675c4;
+    font-weight: 600;
+}
+
+
+.my-image {
+  animation: slide-down 0.5s ease;
+    width: 40%;
+    /* border: 2px solid red; */
+    height: 60vh;
+}
+
+
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-down {
+    0% {
+      transform: translateY(5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+  /* responsive  */
+
+
+@media screen and (max-width: 1040px) {
+  .sub-container {
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    padding: 30px;
+    height: 120vh;
+  }
+
+  .sub-container {
+    width: 80%;
+  }
+
+  .my-image {
+    width: 80%;
+    /* border: 2px solid red; */
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 510px) {
+  .main-container {
+    gap: 1rem;
+    padding: 20px;
+    height: 130vh;
+  }
+
+  .sub-container {
+    width: 95%;
+  }
+
+  .my-image {
+    width: 95%;
+    /* border: 2px solid red; */
+    height: 50vh;
+  }
+}

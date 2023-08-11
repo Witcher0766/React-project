@@ -1,0 +1,25 @@
+
+
+
+.prod-container {
+    height: 50vh;
+    border: 2px solid green;
+}
+
+
+.sub-prod-container {
+    border: 2px solid blue;
+}
+
+
+.sub-prod-1 {
+    border: 2px solid red;
+}
+
+.project-btn {
+    border: 2px solid black;
+}
+
+.project-img {
+    border: 2px solid orange;
+}

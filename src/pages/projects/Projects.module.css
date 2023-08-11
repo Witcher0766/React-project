@@ -1,0 +1,7 @@
+
+
+.projects-container {
+    height: 50vh;
+    border: 2px solid red;
+    position: relative;
+}

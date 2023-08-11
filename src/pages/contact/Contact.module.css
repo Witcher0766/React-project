@@ -1,0 +1,121 @@
+.contact-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 60px 40px;
+}
+
+.contact-container h1 {
+    font-size: 36px;
+    text-align: left;
+    padding-left: 30px;
+    color: var(--foreground);
+}
+
+.contact-sub-container {
+    /* border: 2px solid blue; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-sub-1 {
+    /* border: 2px solid green; */
+    width: 40%;
+}
+.contact-image {
+    animation: slide-down 0.5s ease;
+    width: 40%;
+    height: 60vh;
+  }
+
+
+.contact-sub-1 form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 0.5rem;
+  animation: slide-up 0.5s ease;
+
+}
+.contact-sub-1 form label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  
+  .contact-sub-1  form input[type="text"],
+  .contact-sub-1  form input[type="email"],
+  .contact-sub-1  form textarea {
+    display: block;
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-bottom: 2px;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: #74baff17;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: var(--foreground);
+  }
+  
+
+
+  .contact-btn {
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #4a9ff4;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.contact-btn:hover {
+    background-color: #74b9ff;
+}
+
+
+.contact-sub-1 form textarea:focus {
+    background-color: #74baff57;
+}
+
+.contact-sub-1 form input[type="text"]:focus {
+  background-color: #74baff57;
+
+
+}
+  
+.contact-sub-1 form input[type="email"]:focus {
+  background-color: #74baff57;
+
+  }
+
+
+
+
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-down {
+    0% {
+      transform: translateY(5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
