@@ -1,21 +1,41 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 import ThemeContext from "../../context/themeContext";
 import { useContext} from "react";
 import img6 from '../../assets/img5.gif';
 import img5 from '../../assets/img6.gif'
 import Icons from '../../components/social-icons/Icons';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
   const {theme} = useContext(ThemeContext);
 
+  const form = useRef();
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_2jsqgeg", 
+      'template_2ougxs9', form.current, 'RJoVJ6GBlTPaDCUI0')
+      .then((result) => {
+        toast.success("Message sent successfully")
+      }, (error) => {
+        toast.error(error.text)
+      });
+      e.target.reset();
+  };
+
+
   return (
     <section data-theme={theme}>
       <div className={styles["contact-container"]}>
-      <h1>Contact</h1>
+      <h1>Let's Talk</h1>
       <div className={styles["contact-sub-container"]}>
       <div className={styles["contact-sub-1"]}>
-      <form >
+      <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text"
         name='user_name'

@@ -76,3 +76,39 @@
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width: 854px) {
+    .about-sub-container {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-sub-1 {
+      width: 80%;
+  }
+
+
+  .about-img {
+    width: 80%;
+}
+  }
+  @media screen and (max-width: 600px) {
+
+    .about-sub-1 {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .about-container {
+    padding: 40px 30px 60px 30px;
+}
+
+
+  .about-img {
+    width: 100%;
+    height: 40vh;
+}
+  }

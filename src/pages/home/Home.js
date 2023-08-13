@@ -4,7 +4,11 @@ import { useContext} from "react";
 import styles from './Home.module.css'
 import img1 from '../../assets/img1.gif';
 import img2 from '../../assets/img2.gif';
-import { Animate, Icons, Skills } from '../../components';
+import { Icons, Skills } from '../../components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+import file from '../../resume/Vishwajeet Kumar.pdf';
 
 
 const Home = () => {
@@ -25,7 +29,7 @@ const Home = () => {
     big brands stay mighty</h1>
     <p className={styles["title-1"]}><span>I'm Vishwajeet,</span> a designer with an affinity for working with creative people
     on everything from brand indentities and websites, to custom environmental graphics.</p>
-    <button className="btn">Resume</button>
+    <Link to={file} download={file} target='_blank'><button className="btn">Resume <FontAwesomeIcon icon={faDownload} bounce /></button></Link>
     </div>
    {
     theme === "light" ? (

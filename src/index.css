@@ -1,4 +1,8 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400&family=Climate+Crisis&family=Josefin+Sans:wght@500&family=Libre+Baskerville:wght@700&family=Roboto+Slab:wght@300;600&family=Roboto:wght@400;900&family=Tilt+Warp&family=Ubuntu:wght@300&display=swap');
+
+
+
 :root {
     --color-white: #f5f5f5;
     --color-dark: #000000;
@@ -34,6 +38,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
 }
 
 

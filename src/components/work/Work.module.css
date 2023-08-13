@@ -39,3 +39,13 @@
     padding: 2px 0px 2px 0px;
     list-style: none;
 }
+
+
+
+@media screen and (max-width: 600px) {
+
+    .work-container {
+    padding: 40px 30px 60px 30px;
+
+    }
+  }

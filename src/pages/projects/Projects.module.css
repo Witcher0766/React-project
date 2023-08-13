@@ -1,7 +1,30 @@
 
 
-.projects-container {
-    height: 50vh;
-    border: 2px solid red;
+.main-project-container {
     position: relative;
+    /* border: 2px solid red; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--foreground);
+    text-align: center;
+    padding: 60px;
+}
+
+
+@media screen and (max-width: 449px) {
+    .main-project-container {
+        padding: 45px;
+    }
+}
+@media screen and (max-width: 351px) {
+    .main-project-container {
+        padding: 45px 45px 45px 35px;
+        font-size: 30px;
+    }
+    
 }

@@ -7,7 +7,8 @@
     flex-direction: column;
     padding: 10px;
     gap: 0.2rem;
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background: none;
 }
 
 .ico {
