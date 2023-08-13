@@ -43,3 +43,19 @@
     align-items: center;
     padding-bottom: 20px;
 }
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .footer-icon {
+        min-width: 2%;
+        height: 8vh;
+    }
+
+
+    .sub-footer {
+       padding-bottom: 10px;
+    }
+}

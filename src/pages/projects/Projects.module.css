@@ -18,13 +18,15 @@
 
 @media screen and (max-width: 449px) {
     .main-project-container {
-        padding: 45px;
+       text-align: left;
+       font-size: 30px;
+       padding-left: 35px;
     }
 }
-@media screen and (max-width: 351px) {
+/* @media screen and (max-width: 351px) {
     .main-project-container {
         padding: 45px 45px 45px 35px;
         font-size: 30px;
     }
     
-}
+} */
