@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import useLocalStorage from 'use-local-storage';
 
 const ThemeContext = createContext();
