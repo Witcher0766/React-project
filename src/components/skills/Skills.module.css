@@ -77,21 +77,16 @@ section {
     }
 }
 @media screen and (max-width: 520px) {
-    .sub-skills {
-        width: calc(100%/3);
-    }
     .main-skills {
         margin: 20px 40px 50px 40px;
     }
 }
-@media screen and (max-width: 400px) {
-    .sub-skills {
-        width: calc(100%/3);
-    }
+@media screen and (max-width: 460px) {
+
 
     .main-skills {
-        margin: 20px 30px 50px 30px;
-        padding: 10px;
+        margin: 20px 10px 50px 10px;
+        padding: 5px;
         gap: 0.7rem;
     }
 }
