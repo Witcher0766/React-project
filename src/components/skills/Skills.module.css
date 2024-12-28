@@ -1,4 +1,4 @@
-
+/* 
 
 section {
     background-color: var(--background)
@@ -36,9 +36,7 @@ section {
     justify-content: center;
     align-items: center;
     transition: all 0.3s linear;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
 }
 
 .sub-skills:hover {
@@ -91,3 +89,160 @@ section {
     }
 }
 
+
+
+
+.skills {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .skills h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  
+  .sub-skills {
+    background-color: var(--card-bg-color, #f0f0f0);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sub-skills:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skills-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color, #333);
+  }
+   */
+
+   /* General Section Styles */
+section {
+    background-color: var(--background);
+    padding: 20px 0;
+}
+
+/* Skills Container */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Title Styling */
+.skills h1 {
+    text-align: center;
+    color: var(--foreground);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 30px 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main Skills Grid */
+.main-skills {
+    margin: 20px 50px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Skill Item Styling */
+.sub-skills {
+    width: calc(100% / 6); /* Default width for larger screens */
+    padding: 20px 10px; /* Adjust padding for rectangular shape */
+    border-radius: 10px; /* Slightly rounded corners */
+    cursor: pointer;
+    background-color: var(--card-bg-color, #f0f0f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 2.4px 2.4px 3.2px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.sub-skills:hover {
+    background-color: #74b9ff;
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 6px;
+}
+
+/* Skills Name Styling */
+.skills-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color, #333);
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.sub-skills:hover .skills-name {
+    color: #fff;
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1018px) {
+    .sub-skills {
+        width: calc(100% / 8); /* Adjust width for medium screens */
+    }
+}
+@media screen and (max-width: 815px) {
+    .sub-skills {
+        width: calc(100% / 7); /* Adjust width for smaller screens */
+    }
+}
+@media screen and (max-width: 720px) {
+    .sub-skills {
+        width: calc(100% / 5); /* Adjust width for mobile screens */
+    }
+}
+@media screen and (max-width: 600px) {
+    .sub-skills {
+        width: calc(100% / 4); /* Adjust width for even smaller screens */
+    }
+}
+@media screen and (max-width: 520px) {
+    .main-skills {
+        margin: 20px 40px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .main-skills {
+        margin: 20px 10px;
+        gap: 0.7rem;
+        padding: 10px;
+    }
+}

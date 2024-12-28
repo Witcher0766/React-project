@@ -1,7 +1,6 @@
 
 section  {
     background-color: var(--background);
-    /* border: 2px solid red; */
     position: relative;
     height: auto;
     margin-bottom: 0;
@@ -10,7 +9,6 @@ section  {
 
 
 .main-container {
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: space-evenly;
     /* margin: 30px; */

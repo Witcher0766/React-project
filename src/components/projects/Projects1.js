@@ -31,7 +31,7 @@ const Projects1 = () => {
      <p>{description}</p>
       <b>{tech}</b>
       <div className={styles["project-btn"]}>
-      <Link target='_blank' to={code}  ><button className='btn'>{btn1} <FontAwesomeIcon icon={faGithub} bounce /></button>  </Link> 
+      <Link><button className='btn'>{btn1} <FontAwesomeIcon icon={faGithub} bounce /></button>  </Link> 
       <Link target='_blank' to={live}  ><button className='btn'>{btn2} <FontAwesomeIcon icon={faUpRightFromSquare} bounce /></button>   </Link>
       </div>
      </div>
