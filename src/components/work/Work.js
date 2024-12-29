@@ -16,7 +16,7 @@ const Work = () => {
     <h3 className={styles["sde-heading"]}>SDE Full Time <span style={{color:"#6c757d"}}>[June 2024 - Current]</span></h3>
     <h5>SCHOYO</h5>
     <ul>
-        <li><span style={{fontWeight: 800}}>Tech: </span>HTML, CSS, JAVASCRIPT, FIGMA, REACTJS, GITHUB</li>
+        <li><span style={{fontWeight: 800}}>Tech: </span>Angular, Typescript, Mysql, SpringBoot, Kotlin, XML</li>
     </ul>
     </div>
 
@@ -24,7 +24,7 @@ const Work = () => {
     <h3 className={styles["sde-heading-1"]}>SDE Intern <span style={{color:"#6c757d"}}>[Dec 2023 - May 2024]</span></h3>
     <h5>SCHOYO</h5>
     <ul>
-        <li><span style={{fontWeight: 800}}>Tech: </span>HTML, CSS, JAVASCRIPT, FIGMA, REACTJS, GITHUB</li>
+        <li><span style={{fontWeight: 800}}>Tech: </span>Angular, Typescript, Mysql, SpringBoot</li>
     </ul>
     </div>
 
@@ -32,7 +32,7 @@ const Work = () => {
     <h3 className={styles["sde-heading"]}>Web Developer Intern <span style={{color:"#6c757d"}}>[Jul 2023 - Aug 2023]</span></h3>
     <h5>K3S</h5>
     <ul>
-        <li><span style={{fontWeight: 800}}>Tech: </span>HTML, CSS, JAVASCRIPT, FIGMA, REACTJS, GITHUB</li>
+        <li><span style={{fontWeight: 800}}>Tech: </span>HTML, CSS, Javascript, NodeJS, ExpressJS, MongoDB, Figma, ReactJS, Github</li>
     </ul>
     </div>
 

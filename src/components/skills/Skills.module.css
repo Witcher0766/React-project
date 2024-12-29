@@ -157,13 +157,14 @@ section {
 
 /* Main Skills Grid */
 .main-skills {
-    margin: 20px 50px;
+    margin: 20px;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
     animation: fadeIn 1s ease-out;
+
 }
 
 /* Skill Item Styling */
@@ -238,6 +239,9 @@ section {
     .main-skills {
         margin: 20px 40px;
     }
+    .sub-skills {
+        width: calc(100% / 3);
+    }
 }
 @media screen and (max-width: 460px) {
     .main-skills {
@@ -245,4 +249,5 @@ section {
         gap: 0.7rem;
         padding: 10px;
     }
+  
 }
