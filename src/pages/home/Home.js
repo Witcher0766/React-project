@@ -25,9 +25,12 @@ const Home = () => {
               Make brand identities from scratch and help big brands stay mighty
             </h1>
             <p className={styles["title-1"]}>
-              <span>I'm Vishwajeet,</span> a passionate designer specializing in
-              collaborating with creative professionals to craft impactful brand
-              identities, engaging websites, and bespoke environmental graphics.
+              <span>I'm Vishwajeet,</span> a passionate software developer
+              specializing in web and app development, I craft seamless
+              digital experiences that blend innovation with functionality.
+              Collaborating with creative professionals, I build intuitive
+              applications, dynamic websites, and impactful brand identities
+              that drive engagement and success.
             </p>
             <Link to={file} download={file} target="_blank">
               <button className="btn">
