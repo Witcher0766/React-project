@@ -8,7 +8,7 @@ import { Icons, Skills } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import file from "../../resume/Vishwajeet Kumar.pdf";
+import file from "../../resume/2_june_latest_resume.pdf";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
